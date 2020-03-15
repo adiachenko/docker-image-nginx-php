@@ -1,0 +1,5 @@
+upstream backend {
+    server ${NGINX_BACKEND_HOST}:${NGINX_BACKEND_PORT};
+}
+
+include /etc/nginx/conf.d/boilerplates/${NGINX_SERVER_TYPE}.conf;
